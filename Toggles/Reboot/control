@@ -1,0 +1,9 @@
+Package: me.devbug.cctoggle.reboot
+Name: Reboot
+Depends: mobilesubstrate, kr.slak.cctoggles
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: A Simple toggle for CCToggles!
+Maintainer: deVbug
+Author: deVbug
+Section: Addons (CCToggles)
