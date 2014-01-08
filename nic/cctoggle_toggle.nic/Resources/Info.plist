@@ -30,5 +30,7 @@
 	<string>Toggle</string>
 	<key>wantsControlCenterDismissal</key>
 	<false/>
+	<key>wantsDeviceUnlock</key>
+	<false/>
 </dict>
 </plist>

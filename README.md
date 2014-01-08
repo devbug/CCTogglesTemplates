@@ -74,6 +74,8 @@ This is Toggle's `Resources/Info.plist`.
 	<string>Toggle</string>
 	<key>wantsControlCenterDismissal</key>
 	<false/>
+	<key>wantsDeviceUnlock</key>
+	<false/>
 </dict>
 </plist>
 ```
@@ -113,6 +115,8 @@ And this is QuickLaunch's `Resources/Info.plist`.
 	<string>QuickLaunch</string>
 	<key>wantsControlCenterDismissal</key>
 	<true/>
+	<key>wantsDeviceUnlock</key>
+	<false/>
 </dict>
 </plist>
 ```
@@ -120,11 +124,13 @@ And this is QuickLaunch's `Resources/Info.plist`.
 <br /><br />
 If you make Toggle, you take care of these keys.<br />
 <br />
-`type` and `wantsControlCenterDismissal`.<br />
+`type`, `wantsControlCenterDismissal` and `wantsDeviceUnlock`.<br />
 <br />
 First of all, Toggle's `wantsControlCenterDismissal` is always *false*.<br />
 If you make QuickLaunch, you can set what you want.<br />
 `wantsControlCenterDismissal` means *dismiss or not ControlCenter when you tap quicklaunch*.<br />
+<br />
+Toggle's `wantsDeviceUnlock` is also always *false*.<br/>
 <br />
 And `type` is just two values.<br />
 *Toggle* and *QuickLaunch*.<br />
