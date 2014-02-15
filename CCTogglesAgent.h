@@ -12,6 +12,12 @@ typedef enum {
 @required
 - (CCToggleState)getState;
 - (void)setState:(BOOL)newState;
+
+@optional
+- (UIImage *)glyphImage;
+- (UIImage *)selectedGlyphImage;
+- (void)toggleLongPressed;
+- (void)toggleDoubleTapped;
 @end
 
 @interface CCTogglesAgent : NSObject

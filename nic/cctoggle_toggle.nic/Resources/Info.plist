@@ -27,9 +27,9 @@
 	<key>NSPrincipalClass</key>
 	<string>@@PROJECTNAME@@CCToggle</string>
 	<key>type</key>
-	<string>Toggle</string>
+	<string>QuickLaunch</string>
 	<key>wantsControlCenterDismissal</key>
-	<false/>
+	<true/>
 	<key>wantsDeviceUnlock</key>
 	<false/>
 </dict>

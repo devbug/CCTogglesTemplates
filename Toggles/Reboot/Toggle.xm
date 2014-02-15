@@ -29,7 +29,7 @@ static BOOL toggleValue		= NO;
 	if (newState == NO && toggleValue == YES) {
 		toggleValue = newState;
 		
-		[(SpringBoard *)[UIApplication sharedApplication] _rebootNow];
+		[(SpringBoard *)[UIApplication sharedApplication] reboot];
 	}
 	else {
 		toggleValue = newState;

@@ -39,6 +39,12 @@ They have just two differents.<br />
 `Makefile`.
 <br />
 <br />
+<br />
+```
+Before read below,
+I just recommended if you want to make "Toggle", please use Flipswitch.
+```
+<br />
 
 This is Toggle's `Resources/Info.plist`.
 ```
@@ -184,6 +190,22 @@ For iPhone 4/4s/5/5c/5s, iPod touch 5G, iPad 3/4/Air/Mini Retina<br />
 <br />
 And if you want to set 'on' state icon, you should put one more pair.<br />
 `Icon_on.png` and `Icon_on@2x.png`.<br />
+<br />
+<br /><br />
+********************************************************************
+<br /><br />
+#####Gestures
+You can catch "double tap" and "long press" gestures.<br />
+But I don't recommended using "double tap" gesture.<br />
+<br /
+And double tap gesture requires CCToggles (>= 0.1-15).<br />
+※ long press gesture requires CCToggles (>= 0.1-6).<br />
+<br />
+Just add this methods<br />
+```
+- (void)toggleLongPressed;
+- (void)toggleDoubleTapped;
+```
 <br />
 <br /><br />
 ********************************************************************

@@ -1,6 +1,7 @@
 #import "CCTogglesAgent.h"
 
 
+
 @interface SBPrototypeController : NSObject
 + (id)sharedInstance;
 + (void)reloadDefaults;

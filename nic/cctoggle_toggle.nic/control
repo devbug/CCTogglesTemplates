@@ -1,6 +1,6 @@
 Package: @@PACKAGENAME@@
 Name: @@FULLPROJECTNAME@@
-Depends: mobilesubstrate, kr.slak.cctoggles
+Depends: mobilesubstrate, kr.slak.cctoggles (>= 0.1-14)
 Version: 0.0.1
 Architecture: iphoneos-arm
 Description: A Simple toggle for CCToggles!
