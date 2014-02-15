@@ -197,8 +197,8 @@ And if you want to set 'on' state icon, you should put one more pair.<br />
 #####Gestures
 You can catch "double tap" and "long press" gestures.<br />
 But I don't recommended using "double tap" gesture.<br />
-<br /
-And double tap gesture requires CCToggles (>= 0.1-15).<br />
+<br />
+And double tap gesture requires CCToggles (>= 0.1-16).<br />
 ※ long press gesture requires CCToggles (>= 0.1-6).<br />
 <br />
 Just add this methods<br />
