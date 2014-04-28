@@ -1,5 +1,5 @@
+#import <stdlib.h>
 #import "CCTogglesAgent.h"
-#import "substrate.h"
 
 
 @interface SpringBoard : UIApplication
@@ -8,7 +8,11 @@
 
 
 static BOOL toggleValue		= NO;
-static BOOL preventExitSB	= NO;
+
+
+void exit_handler(void) {
+	system("killall -9 backboardd");
+}
 
 
 @interface RespringCCToggle : NSObject <CCTogglesDataSource>
@@ -29,12 +33,10 @@ static BOOL preventExitSB	= NO;
 	if (newState == NO && toggleValue == YES) {
 		toggleValue = newState;
 		
-		preventExitSB = YES;
+		atexit(exit_handler);
 		
 		SpringBoard *sb = (SpringBoard *)[UIApplication sharedApplication];
 		[sb _relaunchSpringBoardNow];
-		
-		preventExitSB = NO;
 	}
 	else {
 		toggleValue = newState;
@@ -54,20 +56,4 @@ static BOOL preventExitSB	= NO;
 
 @end
 
-
-
-void (*origin_exit)(int status);
-
-void new_exit(int status) {
-	if (preventExitSB) {
-		system("killall -9 backboardd");
-	}
-	
-	origin_exit(status);
-}
-
-
-%ctor {
-	MSHookFunction((void*)exit, (void*)new_exit, (void**)&origin_exit);
-}
 
